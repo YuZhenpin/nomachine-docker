@@ -17,7 +17,7 @@ mkdir /home/nomachine && \
 chown -R nomachine:nomachine /home/nomachine && \
 echo 'nomachine:nomachine' | chpasswd
 #
-EXPOSE 4000
+EXPOSE 22 4000 4080 4443
 #Add script for starting
 ADD nxserver.sh /
 ENTRYPOINT ["/nxserver.sh"]
